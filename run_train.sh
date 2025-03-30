@@ -1,0 +1,13 @@
+python train_demo.py \
+    --model proto_bert \
+    --pretrain_ckpt bert-base-uncased \
+    --N 3 \
+    --K 1 \
+    --train train_data_6 \
+    --val validation_data \
+    --test test_data_2000 \
+    --add_prompt back \
+    --train_iter 5000 \
+    --val_iter 2000 \
+    --test_iter 2000 \
+    --val_step 1000 \
