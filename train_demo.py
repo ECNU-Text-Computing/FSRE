@@ -121,7 +121,6 @@ def main():
     parser.add_argument('--test_output', default=None,
             help='test file')
     
-    #
     parser.add_argument('--backend_model', type=str, default='bert',
            help='checkpoint name.')
     
@@ -212,9 +211,6 @@ def main():
         if opt.adv:
             adv_data_loader = get_loader_unsupervised(opt.adv, sentence_encoder,
                 N=trainN, K=K, Q=Q, na_rate=opt.na_rate, batch_size=batch_size)
-   
-   
-    #print('data finish!')
    
     if opt.optim == 'sgd':
         pytorch_optim = optim.SGD

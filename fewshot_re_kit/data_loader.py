@@ -83,8 +83,7 @@ class FewRelDataset(data.Dataset):
             #TODO
             rel_text, rel_text_mask = self.__getrel__(self.pid2name[class_name])
             rel_text, rel_text_mask = torch.tensor(rel_text).long(), torch.tensor(rel_text_mask).long()
-            # print("rel_text:\t",rel_text)
-            # print("rel_text_mask:\t",rel_text_mask)
+
             relation_set['word'].append(rel_text)
             relation_set['mask'].append(rel_text_mask)
         
@@ -175,9 +174,9 @@ def get_loader(name, encoder, N, K, Q, batch_size,
             shuffle=False,
             pin_memory=True,
             collate_fn=collate_fn)
-    # print(len(data_loader.dataset))
+
     return iter(data_loader)
-    # return data_loader
+
 
 
 

@@ -193,11 +193,9 @@ class BERTSentenceEncoder(nn.Module):
             ##this is concanate the start tokens of two entity mentions
             #import pdb
             #pdb.set_trace()
-            # print(type(self.bert))
             outputs = self.bert(inputs['word'], attention_mask=inputs['mask'])
             
             if cat:
-                # print(outputs)
                 sequence_outputs = outputs['last_hidden_state'] # [20, 128, 768]
                 tensor_range = torch.arange(inputs['word'].size()[0])  # inputs['word'].shape  [20, 128]
                 h_state = outputs['last_hidden_state'][tensor_range, inputs["pos1"]] # h_state.shape [20, 768]
