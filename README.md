@@ -14,7 +14,7 @@ We evaluate our model using three biomedical datasets: the [2010 i2b2/VA challen
 
 To assess the performance of FSRE with limited amount of training data and to facilitate a comparative analysis with traditional BERT models on relation extraction tasks, we perform very hard restrictions of data partitioning on the dataset.
 
-For demonstration, we have uploaded the sampled data from 2010 i2b2/VA challenge dataset in the **data** folder. As shown in [Figure 1](./figures/Training_Settings_Fig3.pdf), for this dataset, we randomly select three out of the total eight classes. For the validation set, we choose five classes, with each class containing 50 instances. Among these five classes, three are consistent with the training set, while the other two are selected at random. Regarding the test set, we randomly select 2,000 query instances, ensuring representation from all eight classes in the dataset.
+For demonstration, we have uploaded the sampled data from 2010 i2b2/VA challenge dataset in the **data** folder. As shown in ![Figure 1](./figures/Training_Settings.png), for this dataset, we randomly select three out of the total eight classes. For the validation set, we choose five classes, with each class containing 50 instances. Among these five classes, three are consistent with the training set, while the other two are selected at random. Regarding the test set, we randomly select 2,000 query instances, ensuring representation from all eight classes in the dataset.
 
 ### Model Training
 
