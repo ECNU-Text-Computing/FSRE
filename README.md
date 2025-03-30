@@ -40,7 +40,7 @@ Some explanations of the parameters in the script:
 --val_step
 	val after training how many iters
 --model
-	the model used under **models** folder
+	the model used under ./models folder
 --load_ckpt
 	the path of the trained model
 --add_prompt
