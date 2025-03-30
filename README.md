@@ -14,11 +14,11 @@ We evaluate our model using three biomedical datasets: the [2010 i2b2/VA challen
 
 To assess the performance of FSRE with limited amount of training data and to facilitate a comparative analysis with traditional BERT models on relation extraction tasks, we perform very hard restrictions of data partitioning on the dataset.
 
-For demonstration, we have uploaded the sampled data from 2010 i2b2/VA challenge dataset in the **data** folder. ![Figure 1](./figures/Training_Settings.png) 
+For demonstration, we have uploaded the sampled data from 2010 i2b2/VA challenge dataset in the `data` folder. ![Figure 1](./figures/Training_Settings.png) 
 As shown in the above figure, we randomly select three out of the total eight classes. For the validation set, we choose five classes, with each class containing 50 instances. Among these five classes, three are consistent with the training set, while the other two are selected at random. Regarding the test set, we randomly select 2,000 query instances, ensuring representation from all eight classes in the dataset.
 
 ### Model Training
-Put all data in the **data** folder, CP pretrained model in the **CP_model** folder (you can download CP model from [here](https://github.com/thunlp/RE-Context-or-Names/tree/master/pretrain)), and then you can use the script *run_train.sh* to train the model.
+Put all data in the `data` folder, CP pretrained model in the `CP_model` folder (you can download CP model from [here](https://github.com/thunlp/RE-Context-or-Names/tree/master/pretrain)), and then you can use the script *run_train.sh* to train the model.
 
 #### Train
 Set the corresponding parameter values in the script, and then run:
@@ -48,4 +48,14 @@ Some explanations of the parameters in the script:
 ```
 
 ### Citation
-He, G., & Huang, C. (2025). Few-shot medical relation extraction via prompt tuning enhanced pre-trained language model. Neurocomputing, 129752.
+<!-- He, G., & Huang, C. (2025). Few-shot medical relation extraction via prompt tuning enhanced pre-trained language model. Neurocomputing, 129752. -->
+```
+@article{he2025few,
+  title={Few-shot medical relation extraction via prompt tuning enhanced pre-trained language model},
+  author={He, Guoxiu and Huang, Chen},
+  journal={Neurocomputing},
+  pages={129752},
+  year={2025},
+  publisher={Elsevier}
+}
+```
